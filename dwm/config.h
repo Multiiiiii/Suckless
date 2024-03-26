@@ -7,16 +7,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=11", "fontawesome:size=11" };
 static const char dmenufont[]       = "monospace:size=11";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-};
+
+#include "/home/m/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
 static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九" };
@@ -59,7 +51,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", norm_bg, "-nf", norm_fg, "-sb", sel_bg, "-sf", sel_fg, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *playpause[]  = { "playerctl", "play-pause" };
 static const char *volupcmd[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+1000", NULL };
