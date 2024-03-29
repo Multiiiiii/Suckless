@@ -1,0 +1,7 @@
+#! /bin/sh
+
+wall=$(find $HOME/Pictures/Wall/ -type f | shuf -n 1)
+xwallpaper --zoom $wall 
+wal -i $wall >/dev/null
+sed -i '/SchemeUrg/d' $HOME/.cache/wal/colors-wal-dwm.h
+xdotool key alt+F5
