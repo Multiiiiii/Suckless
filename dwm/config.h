@@ -113,7 +113,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY,		                    XK_minus,  setgaps,	       {.i = -1 } },
-	{ MODKEY,		                  	XK_dead_grave,  setgaps,	       {.i = +1 } },
+	{ MODKEY,		                  	XK_dead_grave,  setgaps,	       {.i = +1 } },//for none us layout replace XK_dead_grave with XK_equal
 	{ MODKEY|ShiftMask,	          	XK_dead_grave,  setgaps,	       {.i =  0 } },
 	{ MODKEY,                       XK_F5,     xrdb,           {.v = NULL } },
 	TAGKEYS(                        XK_1,                      0)
