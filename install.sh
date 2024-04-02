@@ -11,4 +11,5 @@ sudo mv default.jsonc /usr/share/fastfetch/presets/
 systemctl enable ufw
 git clone https://aur.archlinux.org/paru-bin.git
 cd paru-bin && makepkg -sri
+setxkbmap -layout de neo
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
