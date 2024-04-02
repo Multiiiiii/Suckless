@@ -7,6 +7,7 @@ cd st && sudo make clean install
 mv .xinitrc ~/ 
 mv .bashrc ~/ 
 sudo mv 00-keyboard.conf /etc/X11/xorg.conf.d/
+sudo mv vconsole.conf /etc/
 sudo mv setbg /usr/bin/ 
 sudo mv default.jsonc /usr/share/fastfetch/presets/
 systemctl enable ufw
