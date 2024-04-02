@@ -33,6 +33,7 @@ sxiv
 transset-df
 ttf-arphic-uming
 ttf-font-awesome
+ttf-go-nerd
 ufw
 unclutter
 vifm
