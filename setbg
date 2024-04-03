@@ -5,3 +5,4 @@ xwallpaper --zoom $wall
 wal -i $wall >/dev/null
 sed -i '/SchemeUrg/d' $HOME/.cache/wal/colors-wal-dwm.h
 xdotool key alt+F5
+betterlockscreen -u $wall
