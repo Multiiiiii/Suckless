@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-systemctl enable ufw
+sudo systemctl enable ufw
