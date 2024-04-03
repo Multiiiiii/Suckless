@@ -8,6 +8,6 @@ while IFS= read -r package; do
         sudo pacman -S --noconfirm "$package"
     else
         echo "Installing $package with paru..."
-        paru -S --noconfirm "$package"
+        paru -S --needed --noconfirm "$package"
     fi
 done < packages.txt
