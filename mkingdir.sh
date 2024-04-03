@@ -4,5 +4,5 @@ mkdir Pictures
 mkdir Vids
 cd Pictures
 mkdir Wall
-cd .. 
 mv black-hole-wallpaper.webp ~/Pictures/Wall
+cd ..
