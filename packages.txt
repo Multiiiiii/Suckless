@@ -27,9 +27,11 @@ pavucontrol
 pipewire
 pipewire-pulse
 playerctl
+pyside6
 python-pywal
 speedtest-cli
 sxiv
+syncplay
 transset-df
 ttf-arphic-uming
 ttf-font-awesome
