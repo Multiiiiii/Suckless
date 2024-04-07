@@ -17,6 +17,7 @@ linux-firmware
 mpv
 mpv-mpris
 neovim
+nemo
 networkmanager
 noto-fonts
 openssh
