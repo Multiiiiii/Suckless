@@ -22,6 +22,8 @@ echo "
 | .__/ \\__,_|\\___|_|\\_\\__,_|\\__, |\\___||___/
 |_|                         |___/
 "
+echo "Installing ChaoticAUR"
+./ChaoticAUR.sh
 ./pkginstall.sh
 echo "
                   _          _ _
