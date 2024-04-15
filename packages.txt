@@ -1,4 +1,5 @@
 armcord-bin
+autojump
 base
 base-devel
 betterlockscreen
