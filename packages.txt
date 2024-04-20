@@ -17,6 +17,7 @@ linux
 linux-firmware
 mpv
 mpv-mpris
+mupdf-gl
 neovim
 nemo
 networkmanager
