@@ -32,12 +32,18 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask      switchtotag  isfloating   monitor */
-	{ "Gimp",      NULL,       NULL,       0,            1,           1,           -1 },
-	{ "waterfox",  NULL,       NULL,       1 << 8,       1,           0,           -1 },
-	{ "Nemo",      "nemo",     NULL,       1 << 1,       1,           0,           -1 },
-	{ "thunderbird", NULL,     NULL,       1 << 4,       1,           0,           -1 },
-	{ "ArmCord",     NULL,     NULL,       1 << 2,       1,           0,           -1 },
+	/* class      instance    title       tags mask      switchtotag  isfloating   isterminal noswallow monitor */
+	{ "Gimp",      NULL,       NULL,       0,            1,           1,           0,         0,        -1 },
+	{ "waterfox",  NULL,       NULL,       1 << 8,       1,           0,           0,         0,        -1 },
+	{ "Nemo",      "nemo",     NULL,       1 << 1,       1,           0,           0,         0,        -1 },
+	{ "thunderbird", NULL,     NULL,       1 << 4,       1,           0,           0,         0,        -1 },
+	{ "ArmCord",     NULL,     NULL,       1 << 2,       1,           0,           0,         0,        -1 },
+	{ "St",        NULL,       NULL,       0,            0,           0,           1,         0,        -1 },
+	{ NULL,   NULL,  "Event Tester",       0,            0,           0,           0,         1,        -1 },
+	{ NULL,   NULL,  "ncspot",        1 << 3,            1,           0,           0,         0,        -1 },
+	{ NULL,   NULL,  "vifm",          1 << 1,            1,           0,           1,         0,        -1 },
+	{ "mpv",   NULL,  NULL,           1 << 7,            1,           0,           0,         0,        -1 },
+	{ NULL,  "sxiv",  NULL,           1 << 6,            1,           0,           0,         0,        -1 },
 };
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
