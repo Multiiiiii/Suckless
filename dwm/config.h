@@ -83,20 +83,20 @@ static const char *brightupcmd[] = { "xbacklight", "-inc", "10", NULL };
 static const char *brightdowncmd[] = { "xbacklight", "-dec", "10", NULL };
 static const char *nextcmd[] = { "playerctl", "next", NULL };
 static const char *prevcmd[] = { "playerctl", "previous", NULL };
-static const char *lockcmd[] = { "betterlocksrceen", "-l", NULL };
+static const char *lockcmd[] = { "betterlockscreen", "-l", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
   
-  { 0,                       0x1008FF14,      spawn,          {.v = playpause } },
-  { 0,                       0x1008FF13,      spawn,          {.v = volupcmd } },
-  { 0,                       0x1008FF11,      spawn,          {.v = voldowncmd } },
-  { 0,                       0x1008FF12,      spawn,          {.v = mutevolcmd } },
-  { 0,                       0x1008FFB2,      spawn,          {.v = mutemiccmd } },
-  { 0,                       0x1008FF02,      spawn,          {.v = brightupcmd } },
-  { 0,                       0x1008FF03,      spawn,          {.v = brightdowncmd } },
-  { 0,                       0x1008FF17,      spawn,          {.v = nextcmd } },
-  { 0,                       0x1008FF16,      spawn,          {.v = prevcmd } },
+  { 0,                       0x1008FF14,      spawn,         {.v = playpause } },
+  { 0,                       0x1008FF13,      spawn,         {.v = volupcmd } },
+  { 0,                       0x1008FF11,      spawn,         {.v = voldowncmd } },
+  { 0,                       0x1008FF12,      spawn,         {.v = mutevolcmd } },
+  { 0,                       0x1008FFB2,      spawn,         {.v = mutemiccmd } },
+  { 0,                       0x1008FF02,      spawn,         {.v = brightupcmd } },
+  { 0,                       0x1008FF03,      spawn,         {.v = brightdowncmd } },
+  { 0,                       0x1008FF17,      spawn,         {.v = nextcmd } },
+  { 0,                       0x1008FF16,      spawn,         {.v = prevcmd } },
 
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } },
 
