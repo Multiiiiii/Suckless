@@ -83,6 +83,7 @@ static const char *brightupcmd[] = { "xbacklight", "-inc", "10", NULL };
 static const char *brightdowncmd[] = { "xbacklight", "-dec", "10", NULL };
 static const char *nextcmd[] = { "playerctl", "next", NULL };
 static const char *prevcmd[] = { "playerctl", "previous", NULL };
+static const char *lockcmd[] = { "betterlocksrceen", "-l", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -96,6 +97,8 @@ static Key keys[] = {
   { 0,                       0x1008FF03,      spawn,          {.v = brightdowncmd } },
   { 0,                       0x1008FF17,      spawn,          {.v = nextcmd } },
   { 0,                       0x1008FF16,      spawn,          {.v = prevcmd } },
+
+	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } },
 
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
