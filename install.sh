@@ -107,7 +107,7 @@ echo "
 
 
 "
-./backg.sh
+./movescripts.sh
 echo "
   __           _    __      _       _
  / _| __ _ ___| |_ / _| ___| |_ ___| |__
