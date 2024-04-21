@@ -1,6 +1,16 @@
 
 #!/bin/bash
 
+read -p "Is this a minimal intsall (no wm)? (y/n) [default=n] " yn
+: ${yn:=y}
+if [[ $yn == [Yy]* ]]; then
+
+  echo "Skipping..."
+
+else
+ sudo mv dwm.desktop /usr/share/xsessions/
+ sudo mv dwm.sh /usr/local/bin/
+fi
 
 read -p "Do you have Paru? (y/n) [default=n] " yn
 : ${yn:=n}
