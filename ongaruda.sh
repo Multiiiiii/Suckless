@@ -1,5 +1,5 @@
-mv dwm.desktop /usr/share/xsessions/
-mv dwm.sh /usr/local/bin/
+sudo mv dwm.desktop /usr/share/xsessions/
+sudo mv dwm.sh /usr/local/bin/
 
 echo "
       _                    _   _
