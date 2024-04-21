@@ -1,5 +1,15 @@
-#!/usr/bin/env bash
-echo "
+
+#!/bin/bash
+
+
+read -p "Do you have Paru? (y/n) [default=n] " yn
+: ${yn:=n}
+if [[ $yn == [Yy]* ]]; then
+
+  echo "Skipping..."
+
+else
+    echo "
  ___           _        _ _ _               ____
 |_ _|_ __  ___| |_ __ _| | (_)_ __   __ _  |  _ \\ __ _ _ __ _   _
  | || '_ \/ __| __/ _\` | | | | '_ \ / _\` | | |_) / _\` | '__| | | |
@@ -8,8 +18,16 @@ echo "
                                     |___/
 "
 ./getparu.sh
+fi
 
-echo "
+read -p "Do you have ChaoticAUR? (y/n) [default=n] " yn
+: ${yn:=n}
+if [[ $yn == [Yy]* ]]; then
+
+  echo "Skipping..."
+
+else
+ echo "
  __  __       _    _
 |  \\/  | __ _| | _(_)_ __   __ _
 | |\\/| |/ _\` | |/ / | '_ \\ / _\` |
@@ -23,7 +41,16 @@ echo "
  \\____|_| |_|\\__,_|\\___/ \\__|_|\\___/_/   \\_\\___/|_| \\_\\
 "
 sudo ./ChaoticAUR.sh
-echo "
+fi
+
+read -p "Do you have the nessesary packages? (y/n) [default=n] " yn
+: ${yn:=n}
+if [[ $yn == [Yy]* ]]; then
+
+  echo "Skipping..."
+
+else
+ echo "
  ___           _        _ _ _
 |_ _|_ __  ___| |_ __ _| | (_)_ __   __ _
  | || '_ \\/ __| __/ _\` | | | | '_ \\ / _\` |
@@ -38,6 +65,8 @@ echo "
 |_|                         |___/
 "
 ./pkginstall.sh
+fi
+
 echo "
                   _          _ _
   ___ _ __   __ _| |__   ___| (_)_ __   __ _
@@ -89,7 +118,13 @@ echo "
 
 "
 ./dotfiles.sh
-echo "
+
+
+read -p "Do you want to use my custom version of the Neo2 Keyboardlayout? (y/n) [default=y] " yn
+
+: ${yn:=y}
+if [[ $yn == [Yy]* ]]; then
+    echo "
  _   _              ____
 | \\ | | ___  ___   |___ \\
 |  \\| |/ _ \\/ _ \\    __) |
@@ -98,6 +133,12 @@ echo "
 
 "
 ./neoboard.sh
+else
+    echo "Skipping the command..."
+fi
+
+
+
 echo "
  ____  _
 |  _ \\(_) ___ ___
