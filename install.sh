@@ -48,7 +48,7 @@ read -p "Do you have the nessesary packages? (y/n) [default=n] " yn
 if [[ $yn == [Yy]* ]]; then
 
   echo "Skipping..."
-
+  ./minpkgs.sh
 else
  echo "
  ___           _        _ _ _
