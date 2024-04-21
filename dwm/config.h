@@ -37,7 +37,7 @@ static const Rule rules[] = {
 	{ "waterfox",  NULL,       NULL,       1 << 8,       1,           0,           0,         0,        -1 },
 	{ "Nemo",      "nemo",     NULL,       1 << 1,       1,           0,           0,         0,        -1 },
 	{ "thunderbird", NULL,     NULL,       1 << 4,       1,           0,           0,         0,        -1 },
-	{ "ArmCord",     NULL,     NULL,       1 << 2,       1,           0,           0,         0,        -1 },
+	{ "ArmCord",     NULL,     NULL,       1 << 2,       0,           0,           0,         0,        -1 },
 	{ "St",        NULL,       NULL,       0,            0,           0,           1,         0,        -1 },
 	{ NULL,   NULL,  "Event Tester",       0,            0,           0,           0,         1,        -1 },
 	{ NULL,   NULL,  "ncspot",        1 << 3,            1,           0,           0,         0,        -1 },
