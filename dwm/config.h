@@ -84,6 +84,13 @@ static const char *brightdowncmd[] = { "xbacklight", "-dec", "10", NULL };
 static const char *nextcmd[] = { "playerctl", "next", NULL };
 static const char *prevcmd[] = { "playerctl", "previous", NULL };
 static const char *lockcmd[] = { "betterlockscreen", "-l", NULL };
+static const char *browsercmd[]  = { "waterfox", NULL };
+static const char *filemanagercmd[]  = { "st", "vifm", NULL };
+
+static const char *selectwindowcmd[] = { "screenshot.sh", "select", NULL };
+static const char *selectareacmd[] = { "screenshot.sh", "area", NULL };
+static const char *activewindowcmd[] = { "screenshot.sh", "window", NULL };
+static const char *fullscreencmd[] = {"screenshot.sh", "full", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -98,7 +105,14 @@ static Key keys[] = {
   { 0,                       0x1008FF17,      spawn,         {.v = nextcmd } },
   { 0,                       0x1008FF16,      spawn,         {.v = prevcmd } },
 
+  { 0,                         XK_Print,      spawn,         {.v = activewindowcmd } },
+  { MODKEY,                        XK_s,      spawn,         {.v = fullscreencmd } },
+  { MODKEY|ShiftMask,              XK_s,      spawn,         {.v = selectareacmd } },
+  { MODKEY|ShiftMask,              XK_f,      spawn,         {.v = selectwindowcmd } },
+
 	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = lockcmd } },
+	{ MODKEY,                       XK_n,      spawn,          {.v = browsercmd } },
+	{ MODKEY,                       XK_e,      spawn,          {.v = filemanagercmd } },
 
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
