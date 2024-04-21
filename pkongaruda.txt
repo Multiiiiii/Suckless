@@ -4,6 +4,7 @@ ffcast
 neovim
 pyside6
 python-pywal
+vifm
 xdotool
 xwallpaper
 yt-dlp
