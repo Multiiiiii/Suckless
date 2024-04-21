@@ -1,0 +1,9 @@
+autojump
+betterlockscreen
+ffcast
+neovim
+pyside6
+python-pywal
+xdotool
+xwallpaper
+yt-dlp
