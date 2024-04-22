@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-read -p "Is this a minimal intsall (no wm)? (y/n) [default=n] " yn
+read -p "Is this a minimal intsall (no wm)? (y/n) [default=y] " yn
 : ${yn:=y}
 if [[ $yn == [Yy]* ]]; then
 
