@@ -67,7 +67,7 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ wifi_perc, "[ %s%% ",       "wlp3s0"},
 	{ netspeed_rx, "%sB/s] ",	 "wlp3s0"  },
-  { run_command, "[ %s", "./Suckless/Scripts/Batterystatus.sh"},
+  { run_command, "[  %s", "./Suckless/Scripts/Batterystatus.sh"},
 	{ battery_perc, "%s%%",  "BAT1"}, 
 	{ battery_remaining, " %s] ", "BAT1"},
 	{ cpu_perc, "[ %s%%] ",	 NULL  },
@@ -75,6 +75,7 @@ static const struct arg args[] = {
 	//{ temp,	    "TEMP:%s° ",	 "/sys/class/thermal/thermal_zone1" },
 	//{ temp,     ",%s° ",		 "/sys/class/thermal/thermal_zone0" },
 	{ run_command, "[%s] ",	     "./Suckless/Scripts/Volume.sh"},
+  { run_command, "[%s] ",         "./Suckless/Scripts/Mic.sh"},
 	{ run_command, "[ %s%%] ",   "xbacklight -get | awk '{print int($1)}'" },
 	{ datetime, "[ %s",           "%F][ %T] "  },
 };
