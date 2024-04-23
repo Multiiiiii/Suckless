@@ -39,7 +39,7 @@ syncplay
 transset-df
 ttf-arphic-uming
 ttf-font-awesome
-ttf-go-nerd
+ttf-jetbrains-mono-nerd
 ufw
 unclutter
 vifm
