@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-read -p "Is this a minimal intsall (no wm)? (Y/n)" yn
+read -p "Is this a minimal intsall (no wm)? [Y/n]" yn
 : ${yn:=y}
 if [[ $yn == [Yy]* ]]; then
 
@@ -12,7 +12,7 @@ else
  sudo mv dwm.sh /usr/local/bin/
 fi
 
-read -p "Do you have Paru? (y/N)" yn
+read -p "Do you have Paru? [y/N]" yn
 : ${yn:=n}
 if [[ $yn == [Yy]* ]]; then
 
@@ -30,7 +30,7 @@ else
 ./getparu.sh
 fi
 
-read -p "Do you have ChaoticAUR? (y/N)" yn
+read -p "Do you have ChaoticAUR? [y/N]" yn
 : ${yn:=n}
 if [[ $yn == [Yy]* ]]; then
 
@@ -53,7 +53,7 @@ else
 sudo ./ChaoticAUR.sh
 fi
 
-read -p "Do you have the nessesary packages? (y/N)" yn
+read -p "Do you have the nessesary packages? [y/N]" yn
 : ${yn:=n}
 if [[ $yn == [Yy]* ]]; then
 
@@ -130,7 +130,7 @@ echo "
 ./dotfiles.sh
 
 
-read -p "Do you want to use my custom version of the Neo2 Keyboardlayout? (Y/n)" yn
+read -p "Do you want to use my custom version of the Neo2 Keyboardlayout? [Y/n]" yn
 
 : ${yn:=y}
 if [[ $yn == [Yy]* ]]; then
