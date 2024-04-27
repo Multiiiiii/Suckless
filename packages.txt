@@ -43,6 +43,7 @@ ttf-jetbrains-mono-nerd
 ufw
 unclutter
 vifm
+warp
 waterfox-bin
 xclip
 xcompmgr

@@ -109,6 +109,7 @@ static const char *lockcmd[] = { "betterlockscreen", "-l", NULL };
 static const char *browsercmd[]  = { "waterfox", NULL };
 static const char *filemanagercmd[]  = { "st", "vifm", NULL };
 static const char *discordcmd[]  = { "armcord", NULL };
+static const char *emailcmd[]  = { "thunderbird", NULL };
 
 static const char *selectwindowcmd[] = { "screenshot.sh", "select", NULL };
 static const char *selectareacmd[] = { "screenshot.sh", "area", NULL };
@@ -137,6 +138,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_n,      spawn,          {.v = browsercmd } },
 	{ MODKEY,                       XK_e,      spawn,          {.v = filemanagercmd } },
 	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = discordcmd } },
+	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = emailcmd } },
 
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
@@ -166,14 +168,15 @@ static Key keys[] = {
 	{ MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[11]} },
- 
-  { MODKEY,                       XK_u,      setlayout,      {.v = &layouts[5]} },
-  { MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[6]} },
-  { MODKEY,                       XK_o,      setlayout,      {.v = &layouts[12]} },
+
+	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} }, /*tile*/
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} }, /*float*/
+	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} }, /*monocle*/
+	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[9]} }, /*nrowgrid*/
+  { MODKEY,                       XK_u,      setlayout,      {.v = &layouts[5]} }, /*deck*/
+  { MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[6]} }, /*bstack*/
+  { MODKEY,                       XK_o,      setlayout,      {.v = &layouts[12]} }, /*centeredmaster*/
+  { MODKEY|ShiftMask,             XK_o,      setlayout,      {.v = &layouts[13]} }, /*centeredfloatingmaster*/
 
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
