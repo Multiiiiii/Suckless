@@ -94,3 +94,4 @@ xorg-xwininfo
 xorg-xwud
 xwallpaper
 yt-dlp
+zip
