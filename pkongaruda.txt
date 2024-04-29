@@ -4,6 +4,8 @@ ffcast
 neovim
 pyside6
 python-pywal
+mpv
+mpv-mpris
 vifm
 xdotool
 xwallpaper
