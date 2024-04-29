@@ -108,6 +108,7 @@ static const char *prevcmd[] = { "playerctl", "previous", NULL };
 static const char *lockcmd[] = { "betterlockscreen", "-l", NULL };
 static const char *browsercmd[]  = { "waterfox", NULL };
 static const char *filemanagercmd[]  = { "st", "vifm", NULL };
+static const char *ncpsotcmd[]  = { "st", "ncspot", NULL };
 static const char *discordcmd[]  = { "armcord", NULL };
 static const char *emailcmd[]  = { "thunderbird", NULL };
 
@@ -139,6 +140,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_e,      spawn,          {.v = filemanagercmd } },
 	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = discordcmd } },
 	{ MODKEY|ShiftMask,             XK_m,      spawn,          {.v = emailcmd } },
+	{ MODKEY|ShiftMask,             XK_r,      spawn,          {.v = ncpsotcmd } },
 
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
