@@ -4,8 +4,10 @@ ffcast
 neovim
 pyside6
 python-pywal
+playerctl
 mpv
 mpv-mpris
+transset-df
 vifm
 xdotool
 xwallpaper
