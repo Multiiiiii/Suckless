@@ -28,12 +28,15 @@ case "$1" in
         ;;
     "window")
         take_window_screenshot
+        nemo ~/Pictures/screenshots
         ;;
     "select")
         take_select_screenshot
+        nemo ~/Pictures/screenshots
         ;;
     "area")
         take_area_screenshot
+        nemo ~/Pictures/screenshots
         ;;
     *)
         echo "Invalid argument. Please use 'full', 'window', 'rectangle', or 'area'."
