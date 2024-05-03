@@ -33,6 +33,7 @@ pipewire-pulse
 playerctl
 pyside6
 python-pywal
+python-pywalfox
 speedtest-cli
 sxiv
 syncplay
