@@ -5,6 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+shopt -s autocd
+
 alias ls='ls --color=auto'
 alias la='ls -A'
 alias ..='cd ..'
