@@ -19,6 +19,7 @@ alias noorphans='sudo pacman -R $(pacman -Qtdq)'
 alias feh='feh --bg-fill'
 alias ytdl='yt-dlp -o "~/Vids/%(title)s.%(ext)s"'
 alias ytdlm='yt-dlp -x --audio-format opus --audio-quality 32K -o "/home/m/Music/%(title)s.%(ext)s"'
+alias vifm='./.config/vifm/scripts/vifmrun'
 source /usr/share/autojump/autojump.bash
 
 export HISTCONTROL=ignoreboth
