@@ -20,7 +20,6 @@ mpv
 mpv-mpris
 mupdf-gl
 neovim
-nemo
 networkmanager
 noto-fonts
 openssh
@@ -28,6 +27,7 @@ pacman-contrib
 paru-bin
 paru-bin-debug
 pavucontrol
+pcmanfm
 pipewire
 pipewire-pulse
 playerctl
