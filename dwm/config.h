@@ -42,7 +42,6 @@ static const Rule rules[] = {
 	{ "Gimp",      NULL,       NULL,       0,            0,           1,           0,         0,        -1 },
 	{ "warp-share",NULL,       NULL,       0,            0,           1,           0,         0,        -1 },
 	{ "waterfox",  NULL,       NULL,       1 << 8,       1,           0,           0,         0,        -1 },
-	{ "Nemo",      "nemo",     NULL,       1 << 1,       1,           0,           0,         0,        -1 },
 	{ "thunderbird", NULL,     NULL,       1 << 4,       1,           0,           0,         0,        -1 },
 	{ "ArmCord",     NULL,     NULL,       1 << 2,       0,           0,           0,         0,        -1 },
 	{ "St",        NULL,       NULL,       0,            0,           0,           1,         0,        -1 },

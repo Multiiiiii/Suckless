@@ -312,10 +312,12 @@ filetype {*.asc},<application/pgp-signature>
        \ !!gpg --verify %c,
 
 " Torrent
-filetype {*.torrent},<application/x-bittorrent> ktorrent %f &
+filetype {*.torrent},<application/x-bittorrent> 
+         \ qbittorrent %c
 fileviewer {*.torrent},<application/x-bittorrent>
          \ dumptorrent -v %c,
          \ transmission-show %c
+         \ qbittorrent %c
 
 " FuseZipMount
 filetype {*.zip,*.jar,*.war,*.ear,*.oxt,*.apkg},
