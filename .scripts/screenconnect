@@ -21,6 +21,9 @@ declare -A position_args=(
     ["mirror"]="--same-as"
 )
 
+# Get primary output
+primary_output=$(xrandr | awk '/ primary/{print $1}')
+
 # Get all available output options
 available_outputs=$(xrandr | awk '/ connected/{print $1}')
 
@@ -38,6 +41,6 @@ selected_position=$(printf "%s\n" "${!position_args[@]}" | dmenu -l ${#position_
 
 # Apply the selected resolution using xrandr
 if [ -n "$selected_resolution" ] && [ -n "$selected_position" ] && [ -n "$selected_output" ]; then
-    xrandr --output "$selected_output" --mode "$selected_resolution" "${position_args[$selected_position]}" eDP
+    xrandr --output "$selected_output" --mode "$selected_resolution" "${position_args[$selected_position]}" "$primary_output"
 fi
 
