@@ -65,18 +65,17 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ wifi_perc, "[ %s%% ",       "wlp3s0"},
-	{ netspeed_rx, "%sB/s] ",	 "wlp3s0"  },
+	{ netspeed_tx, "[  %sB/s ",	 "wlp1s0"  },
+	{ wifi_perc, "   %s%% ",       "wlp1s0"},
+	{ netspeed_rx, "  %sB/s] ",	 "wlp1s0"  },
   { run_command, "[%s ]", "./Suckless/Scripts/Vpn.sh"},
   { run_command, "[  %s", "./Suckless/Scripts/Batterystatus.sh"},
 	{ battery_perc, "%s%%",  "BAT0"}, 
 	{ battery_remaining, " %s] ", "BAT0"},
 	{ cpu_perc, "[ %s%%] ",	 NULL  },
 	{ ram_perc, "[ %s%%] ",	 NULL  },
-	//{ temp,	    "TEMP:%s° ",	 "/sys/class/thermal/thermal_zone1" },
-	//{ temp,     ",%s° ",		 "/sys/class/thermal/thermal_zone0" },
 	{ run_command, "[%s] ",	     "./Suckless/Scripts/Volume.sh"},
   { run_command, "[%s] ",         "./Suckless/Scripts/Mic.sh"},
-	{ run_command, "[ %s%%] ",   "xbacklight -get | awk '{print int($1)}'" },
+	{ run_command, "[ %s%%] ",   "brightnessctl get" },
 	{ datetime, "[ %s",           "%F][ %T] "  },
 };

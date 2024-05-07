@@ -41,15 +41,15 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask      switchtotag  isfloating   isterminal noswallow monitor */
 	{ "Gimp",      NULL,       NULL,       0,            0,           1,           0,         0,        -1 },
 	{ "warp-share",NULL,       NULL,       0,            0,           1,           0,         0,        -1 },
-	{ "waterfox",  NULL,       NULL,       1 << 8,       1,           0,           0,         0,        -1 },
+	{ "firedragon", NULL,       NULL,       1 << 8,       1,           0,           0,         0,        -1 },
 	{ "thunderbird", NULL,     NULL,       1 << 4,       1,           0,           0,         0,        -1 },
 	{ "ArmCord",     NULL,     NULL,       1 << 2,       0,           0,           0,         0,        -1 },
 	{ "St",        NULL,       NULL,       0,            0,           0,           1,         0,        -1 },
 	{ NULL,   NULL,  "Event Tester",       0,            0,           0,           0,         1,        -1 },
 	{ NULL,   NULL,  "ncspot",        1 << 3,            1,           0,           0,         0,        -1 },
 	{ NULL,   NULL,  "vifm",          1 << 1,            1,           0,           1,         0,        -1 },
-	{ "mpv",   NULL,  NULL,           1 << 7,            1,           0,           0,         0,        -1 },
-	{ NULL,  "sxiv",  NULL,           1 << 6,            1,           0,           0,         0,        -1 },
+	{ "mpv",   NULL,  NULL,           1 << 7,            0,           0,           0,         0,        -1 },
+	{ NULL,  "sxiv",  NULL,           1 << 6,            0,           0,           0,         0,        -1 },
 };
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
@@ -100,12 +100,12 @@ static const char *volupcmd[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", 
 static const char *voldowncmd[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-1000", NULL };
 static const char *mutevolcmd[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
 static const char *mutemiccmd[] = { "pactl", "set-source-mute", "@DEFAULT_SOURCE@", "toggle", NULL };
-static const char *brightupcmd[] = { "xbacklight", "-inc", "10", NULL };
-static const char *brightdowncmd[] = { "xbacklight", "-dec", "10", NULL };
+static const char *brightupcmd[] = { "brightnessctl", "set", "+10", NULL };
+static const char *brightdowncmd[] = { "brightnessctl", "set", "10-", NULL };
 static const char *nextcmd[] = { "playerctl", "next", NULL };
 static const char *prevcmd[] = { "playerctl", "previous", NULL };
 static const char *lockcmd[] = { "betterlockscreen", "-l", NULL };
-static const char *browsercmd[]  = { "waterfox", NULL };
+static const char *browsercmd[]  = { "firedragon", NULL };
 static const char *filemanagercmd[]  = { "st", "./.config/vifm/scripts/vifmrun", NULL };
 static const char *ncpsotcmd[]  = { "st", "ncspot", NULL };
 static const char *discordcmd[]  = { "armcord", NULL };
