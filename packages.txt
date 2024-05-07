@@ -46,7 +46,7 @@ unclutter
 unzip
 vifm
 warp
-waterfox-bin
+chomium
 xclip
 xcompmgr
 xdotool
