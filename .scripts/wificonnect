@@ -1,0 +1,13 @@
+#!/bin/bash
+
+available_networks=$(nmcli device wifi list | awk 'match($0, /.{5}(.*?)In/, m) {print substr($0, RSTART+27, RLENGTH-29)}')
+
+selected_network=$(printf "%s\n" "${available_networks[@]}" | dmenu -l $(echo "$available_networks" | wc -l) -i -p "Select network:")
+
+password=$(echo "" | dmenu -p "Enter the password:")
+
+
+
+if [ -n "$selected_network"]; then
+  nmcli device wifi connect "$selected_network" password "$password"
+fi
