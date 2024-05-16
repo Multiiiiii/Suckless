@@ -76,6 +76,6 @@ static const struct arg args[] = {
 	{ ram_perc, "[ %s%%] ",	 NULL  },
 	{ run_command, "[%s] ",	     "./Suckless/Scripts/Volume.sh"},
   { run_command, "[%s] ",         "./Suckless/Scripts/Mic.sh"},
-	{ run_command, "[ %s%%] ",   "brightnessctl get" },
+	{ run_command, "[ %s%%] ",   "./Suckless/Scripts/Brightness.sh" },
 	{ datetime, "[ %s",           "%F][ %T] "  },
 };
