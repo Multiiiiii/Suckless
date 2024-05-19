@@ -41,7 +41,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask      switchtotag  isfloating   isterminal noswallow monitor */
 	{ "Gimp",      NULL,       NULL,       0,            0,           1,           0,         0,        -1 },
 	{ "warp-share",NULL,       NULL,       0,            0,           1,           0,         0,        -1 },
-	{ "waterfox",  NULL,       NULL,       1 << 8,       1,           0,           0,         0,        -1 },
+	{ "firedragon",  NULL,       NULL,       1 << 8,       1,           0,           0,         0,        -1 },
 	{ "thunderbird", NULL,     NULL,       1 << 4,       1,           0,           0,         0,        -1 },
 	{ "ArmCord",     NULL,     NULL,       1 << 2,       0,           0,           0,         0,        -1 },
 	{ "St",        NULL,       NULL,       0,            0,           0,           1,         0,        -1 },
@@ -105,7 +105,7 @@ static const char *brightdowncmd[] = { "xbacklight", "-dec", "10", NULL };
 static const char *nextcmd[] = { "playerctl", "next", NULL };
 static const char *prevcmd[] = { "playerctl", "previous", NULL };
 static const char *lockcmd[] = { "betterlockscreen", "-l", NULL };
-static const char *browsercmd[]  = { "waterfox", NULL };
+static const char *browsercmd[]  = { "firedragon", NULL };
 static const char *filemanagercmd[]  = { "st", "./.config/vifm/scripts/vifmrun", NULL };
 static const char *ncpsotcmd[]  = { "st", "ncspot", NULL };
 static const char *discordcmd[]  = { "armcord", NULL };
