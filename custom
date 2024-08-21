@@ -12,7 +12,7 @@ name[group1]="German (Neo, no useless)";
 
     // Number row
     // --------------------------------------------------------------
-    key <TLDE> { [ dead_circumflex,         dead_caron,              U21BB,                   NoSymbol,                U22C1,           Pointer_EnableKeys,              emptyset,           NoSymbol                 ] };
+    key <TLDE> { [ grave,         dead_caron,              U21BB,                   NoSymbol,                U22C1,           Pointer_EnableKeys,              emptyset,           NoSymbol                 ] };
 
     key <AE01> { [ 1,                       degree,                  onesuperior,             onesubscript,            U22C0,                   NoSymbol,                notsign,                 NoSymbol                 ] };
     key <AE02> { [ 2,                       section,                 twosuperior,             twosubscript,            U221E,                   NoSymbol,                logicalor,               NoSymbol                 ] };
@@ -27,7 +27,7 @@ name[group1]="German (Neo, no useless)";
     key <AE10> { [ 0,                       rightdoublequotemark,    rightsinglequotemark,    zerosubscript,           KP_Multiply,             KP_Multiply,             U2245,                NoSymbol                 ] };
 
     key <AE11> { [ minus,                   emdash,                  U230A,                   U2308,                   KP_Subtract,             KP_Subtract,             U2248,                  NoSymbol                 ] };
-    key <AE12> { [ dead_grave,              U3164,                   U230B,                   U2309,                   U21BE,                   NoSymbol,                U2286,             NoSymbol                 ] };
+    key <AE12> { [ asciicircum,              U3164,                   U230B,                   U2309,                   U21BE,                   NoSymbol,                U2286,             NoSymbol                 ] };
 
 
     key.type[Group1] = "EIGHT_LEVEL_WITH_LEVEL5_LOCK";
