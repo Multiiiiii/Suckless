@@ -182,6 +182,7 @@ command! mpv mpv %d
 " program.  There is also %FOREGROUND, which is useful for entering passwords.
 
 " Pdf
+filextype {*.cbz},<application/pdf> zathura %c %i, apvlv %c, mcomix %c, xpdf %c, mupdf %c
 filextype {*.pdf},<application/pdf> zathura %c %i, apvlv %c, xpdf %c, mupdf %c
 fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
 
