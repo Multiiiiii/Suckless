@@ -4,5 +4,5 @@ pacman-key --lsign-key 3056513887B78AEB
 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
 pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' 
 #move pacman.conf
-mv pacman.conf /etc/ 
+cp pacman.conf /etc/ 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-sudo mv setbg /usr/bin/ 
-sudo mv resizetofullhd /usr/bin/
-sudo mv pwoff /usr/bin/
-sudo mv screenshot.sh /usr/bin/
-mv -r .scripts ~/
+sudo cp setbg /usr/bin/ 
+sudo cp resizetofullhd /usr/bin/
+sudo cp pwoff /usr/bin/
+sudo cp screenshot.sh /usr/bin/
+cp -r .scripts ~/
 systemctl enable betterlockscreen@$USER

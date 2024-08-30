@@ -73,7 +73,7 @@ static const struct arg args[] = {
 	{ netspeed_tx, "[  %sB/s ",	 "wlp3s0"  },
 	{ wifi_perc, "   %s%% ",       "wlp3s0"},
 	{ netspeed_rx, "  %sB/s] ",	 "wlp3s0"  },
-  { keymap, "[%s]", NULL},
+//  { keymap, "[%s]", NULL},
   { run_command, "[%s ]", "./Suckless/Scripts/Vpn.sh"},
   { run_command, "[  %s", "./Suckless/Scripts/Batterystatus.sh"},
 	{ battery_perc, "%s%%",  "BAT1"}, 
