@@ -47,7 +47,7 @@ static const Rule rules[] = {
 	{ "St",        NULL,       NULL,       0,            0,           0,           1,         0,        -1 },
 	{ NULL,   NULL,  "Event Tester",       0,            0,           0,           0,         1,        -1 },
 	{ NULL,   NULL,  "ncspot",        1 << 3,            1,           0,           0,         0,        -1 },
-	{ NULL,   NULL,  "vifm",          1 << 1,            0,           0,           1,         0,        -1 },
+	{ NULL,   NULL,  "vifm",          0,            0,           0,           1,         0,        -1 },
 	{ "mpv",   NULL,  NULL,           1 << 7,            0,           0,           0,         0,        -1 },
 	{ NULL,  "sxiv",  NULL,           1 << 6,            0,           0,           0,         0,        -1 },
 };
