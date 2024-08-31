@@ -4,6 +4,7 @@ base
 base-devel
 betterlockscreen
 cmatrix
+dragon-drop
 efibootmgr
 fastfetch
 ffcast
@@ -41,6 +42,7 @@ transset-df
 ttf-arphic-uming
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
+udiskie-dmenu-git
 ufw
 unclutter
 unzip
