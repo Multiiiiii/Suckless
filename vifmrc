@@ -145,6 +145,7 @@ command! vgrep vim "+grep %a"
 command! reload :write | restart full
 command! sxiv sxiv %d
 command! mpv mpv %d
+command! dragon dragon-drop -a -x %f
 
 " ------------------------------------------------------------------------------
 " File types association
