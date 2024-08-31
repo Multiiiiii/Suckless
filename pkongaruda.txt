@@ -1,5 +1,6 @@
 autojump
 betterlockscreen
+dragon-drop
 ffcast
 neovim
 pyside6
@@ -8,6 +9,7 @@ playerctl
 mpv
 mpv-mpris
 transset-df
+udiskie-dmenu-git
 vifm
 xcompmgr
 xdotool
