@@ -123,6 +123,9 @@ static const char *prevcmd[] = { "playerctl", "previous", NULL };
 static const char *brightupcmd[] = { "brightnessctl", "set", "+10", NULL };
 static const char *brightdowncmd[] = { "brightnessctl", "set", "10-", NULL };
 
+//static const char *brightupcmd[] = { "xbacklight", "-inc", "10", NULL };
+//static const char *brightdowncmd[] = { "xbacklight", "-dec", "10", NULL };
+
 static const char *lockcmd[] = { "betterlockscreen", "-l", NULL };
 static const char *screencmd[] = { "screen", NULL };
 static const char *browsercmd[]  = { "mullvad-browser", NULL };
