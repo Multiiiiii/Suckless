@@ -29,6 +29,9 @@ color. The tags of the focused window are indicated with a filled square in the
 top left corner.  The tags which are applied to one or more windows are
 indicated with an empty square in the top left corner.
 .P
+The attach below patch makes newly spawned windows attach after the currently
+selected window
+.P
 dwm draws a small border around windows to indicate the focus state.
 .SH OPTIONS
 .TP
@@ -44,7 +47,8 @@ command.
 .TP
 .B Button1
 click on a tag label to display all windows with that tag, click on the layout
-label toggles between tiled and floating layout.
+label toggles between tiled and floating layout, click on the window follow
+icon toggles it on and off.
 .TP
 .B Button3
 click on a tag label adds/removes all windows with that tag to/from the view.
@@ -79,6 +83,9 @@ Send focused window to next screen, if any.
 .TP
 .B Mod1\-b
 Toggles bar on and off.
+.TP
+.B Mod1\-n
+Toggles window following on and off.
 .TP
 .B Mod1\-t
 Sets tiled layout.
@@ -116,6 +123,9 @@ Zooms/cycles focused window to/from master area (tiled layouts only).
 .B Mod1\-Shift\-c
 Close focused window.
 .TP
+.B Mod1\-Shift\-f
+Toggle fullscreen for focused window.
+.TP
 .B Mod1\-Shift\-space
 Toggle focused window between tiled and floating state.
 .TP
@@ -142,6 +152,9 @@ Add/remove all windows with nth tag to/from the view.
 .TP
 .B Mod1\-Shift\-q
 Quit dwm.
+.TP
+.B Mod1\-Control\-Shift\-q
+Restart dwm.
 .SS Mouse commands
 .TP
 .B Mod1\-Button1
@@ -155,6 +168,13 @@ Resize focused window while dragging. Tiled windows will be toggled to the float
 .SH CUSTOMIZATION
 dwm is customized by creating a custom config.h and (re)compiling the source
 code. This keeps it fast, secure and simple.
+.SH SIGNALS
+.TP
+.B SIGHUP - 1
+Restart the dwm process.
+.TP
+.B SIGTERM - 15
+Cleanly terminate the dwm process.
 .SH SEE ALSO
 .BR dmenu (1),
 .BR st (1)
