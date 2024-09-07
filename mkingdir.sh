@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 cd ..
 mkdir Pictures
-mkdir Vids
+mkdir Videos
 mkdir Music
 mkdir .scripts
 cd Pictures
