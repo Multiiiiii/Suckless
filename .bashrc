@@ -22,8 +22,6 @@ alias feh='feh --bg-fill'
 alias ytdl='yt-dlp -o "~/Vids/%(title)s.%(ext)s"'
 alias ytdlm='yt-dlp -x --audio-format opus --audio-quality 32K -o "/home/m/Music/%(title)s.%(ext)s"'
 alias vifm='$HOME/.config/vifm/scripts/vifmrun'
-alias gitmika='git config user.name "Mika Elias Richter" && git config user.email "mika-elias.richter@tuilmenau.de"'
-alias gitMulti='git config user.name "Multiiiiii" && git config user.email "multimitamiensaft@gmail.com"'
 alias gitconf='git config user.name && git config user.email'
 source /usr/share/autojump/autojump.bash
 
