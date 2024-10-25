@@ -6,7 +6,7 @@ vpn_status=$(mullvad status -v)
 
 if [[ $vpn_status == *"Connected"* ]]; then
     # Extract location from the status output
-    location=$(echo "$vpn_status" | awk '/Connected/ {print $6, $7}')
+    location=$(echo "$vpn_status" | awk '/Visible location/ {print $3 $4}')
     echo "  $location"
 else
     echo ""
