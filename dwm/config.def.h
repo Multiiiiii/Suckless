@@ -105,10 +105,10 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont};
 static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd2[]  = { "kitty", NULL };
 /*First arg only serves to match against key in rules*/
 static const char *scratchpadcmd[] = {"s", "st", "-t", "scratchpad", NULL}; 
 static const char *scratchpad2cmd[] = {"s", "kitty", "-T", "scratchpad", NULL}; 
-static const char *termcmd2[]  = { "kitty", NULL };
 /*Media controlls*/
 static const char *playpause[]  = { "playerctl", "play-pause" };
 static const char *volupcmd[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+1000", NULL };
@@ -129,9 +129,10 @@ static const char *lockcmd[] = { "betterlockscreen", "-l", NULL };
 static const char *screencmd[] = { "screen", NULL };
 static const char *browsercmd[]  = { "mullvad-browser", NULL };
 static const char *filemanagercmd[]  = { "st", "./.config/vifm/scripts/vifmrun", NULL };
+static const char *filemanagercmd2[]  = { "kitty", "./.config/vifm/scripts/vifmrun", NULL };
 static const char *discordcmd[]  = { "vesktop", NULL };
 static const char *emailcmd[]  = { "thunderbird", NULL };
-static const char *calccmd[]  = { "st", "bc", NULL };
+static const char *calccmd[]  = { "qalculate-qt", NULL };
 /*Screenshot*/
 static const char *selectwindowcmd[] = { "screenshot.sh", "select", NULL };
 static const char *selectareacmd[] = { "screenshot.sh", "area", NULL };
