@@ -35,6 +35,7 @@ playerctl
 pyside6
 python-pywal
 python-pywalfox
+qalculate-qt
 speedtest-cli
 sxiv
 syncplay
