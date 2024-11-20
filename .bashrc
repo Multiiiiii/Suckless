@@ -28,6 +28,7 @@ alias polkit='/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &'
 alias quote='$HOME/.scripts/quote.sh'
 source /usr/share/autojump/autojump.bash
 
+export MANPAGER='nvim +Man!'
 export PATH="$PATH:$HOME/.scripts"
 export HISTCONTROL=ignoreboth
 HISTSIZE=10000
