@@ -3,3 +3,4 @@ Dmenu that looks like rofi.
 + Center
 + Grid
 + Border
++ Mousesuppont
