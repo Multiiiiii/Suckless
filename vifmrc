@@ -151,6 +151,9 @@ command! commit git add . && git commit -m "updated %d"
 command! push git push
 command! mupdf mupdf %f 
 command! wall setbg %f 
+command! latex latexmk -pdf -pvc
+command! here :cd %D
+
 " ------------------------------------------------------------------------------
 " File types association
 " ------------------------------------------------------------------------------
