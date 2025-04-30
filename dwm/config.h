@@ -42,9 +42,10 @@ static const Rule rules[] = {
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor  scratch key */
 	{ "Gimp",          NULL,     NULL,           0,         1,          0,           0,        -1,       0  },
 	{ "thunderbird",   NULL,     NULL,           1 << 4,    0,          0,           0,        -1,       0  },
-	{ "firefox",       NULL,     NULL,           1 << 8,    0,          0,          -1,        -1,       0  },
+	{ "icecat",       NULL,     NULL,           1 << 8,    0,          0,          -1,        -1,       0  },
 	{ NULL,            NULL,"Picture-in-Picture",0,         1,          0,          -1,        -1,       0  },
 	{ "Lollypop",      NULL,     NULL,           1 << 3,    0,          0,          -1,        -1,       0  },
+	{ "Strawberry",      NULL,     NULL,           1 << 3,    0,          0,          -1,        -1,       0  },
 	{ "Mullvad VPN",   NULL,     NULL,           1 << 6,    1,          0,          -1,        -1,       0  },
 	{ "qBittorrent",   NULL,     NULL,           1 << 6,    0,          0,          -1,        -1,       0  },
 	{ "St",            NULL,     NULL,           0,         0,          1,           0,        -1,       0  },
