@@ -49,7 +49,6 @@ unclutter
 unzip
 vifm
 warp
-chomium
 xclip
 xcompmgr
 xdotool
