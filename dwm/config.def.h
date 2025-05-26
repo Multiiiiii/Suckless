@@ -125,8 +125,6 @@ static const char *prevcmd[] = { "playerctl", "previous", NULL };
 
 static const char *brightupcmd[] = { "xbacklight", "-inc", "10", NULL };
 static const char *brightdowncmd[] = { "xbacklight", "-dec", "10", NULL };
-static const char *disabletouch[] = {"xinput", "disable", "11", NULL};
-static const char *enabletouch[] = {"xinput", "enable", "11", NULL};
 
 static const char *lockcmd[] = { "betterlockscreen", "-l", NULL };
 static const char *screencmd[] = { "screen", NULL };
