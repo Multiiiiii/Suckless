@@ -125,6 +125,8 @@ static const char *prevcmd[] = { "playerctl", "previous", NULL };
 
 static const char *brightupcmd[] = { "xbacklight", "-inc", "10", NULL };
 static const char *brightdowncmd[] = { "xbacklight", "-dec", "10", NULL };
+static const char *disabletouch[] = {"xinput", "disable", "11", NULL};
+static const char *enabletouch[] = {"xinput", "enable", "11", NULL};
 
 static const char *lockcmd[] = { "betterlockscreen", "-l", NULL };
 static const char *screencmd[] = { "screen", NULL };
@@ -159,6 +161,8 @@ static const Key keys[] = {
   { 0,                       0x1008FF16,      spawn,         {.v = prevcmd } },
 
   { 0,                       0x1008FF1d,      spawn,         {.v = calccmd } },
+
+  { 0,                       0x1008ff59,      spawn,         {.v = screencmd } },
 
   /*Screenshots*/
   { 0,                             XK_Print,  spawn,         {.v = activewindowcmd } },
