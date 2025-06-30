@@ -5,7 +5,7 @@ while IFS= read -r package; do
     # Check if the package is available in the official repositories
     if pacman -Si "$package" >/dev/null 2>&1; then
         echo "Installing $package with pacman..."
-        sudo pacman -S --needed --noconfirm "$package"
+        sudo pacman -S --needed --noconfirm --overwrite "*" "$package"
     else
         echo "Installing $package with paru..."
         paru -S --needed --noconfirm "$package"

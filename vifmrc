@@ -135,7 +135,7 @@ mark h ~/
 "  see `:help vifm-macros` and `:help vifm-filename-modifiers` for more
 
 command! df df -h %m 2> /dev/null
-command! diff vim -d %f %F
+command! diff nvim -d %f %F
 command! zip zip -r %c.zip %f
 command! unzip unzip %f 
 command! run !! ./%f
@@ -146,6 +146,13 @@ command! reload :write | restart full
 command! sxiv sxiv %d
 command! mpv mpv %d
 command! dragon dragon-drop -a -x %f
+command! pull git pull
+command! commit git add . && git commit -m "updated %d"
+command! push git push
+command! mupdf mupdf %f 
+command! wall setbg %f 
+command! latex latexmk -pdf -pvc
+command! here :cd %D
 
 " ------------------------------------------------------------------------------
 " File types association

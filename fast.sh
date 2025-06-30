@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo mv default.jsonc /usr/share/fastfetch/presets/
+sudo cp default.jsonc /usr/share/fastfetch/presets/

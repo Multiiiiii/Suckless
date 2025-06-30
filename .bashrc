@@ -18,12 +18,24 @@ alias p='sudo pacman'
 alias vim='nvim'
 alias svim='sudo nvim'
 alias noorphans='sudo pacman -R $(pacman -Qtdq)'
+<<<<<<< HEAD
 alias ytdl='yt-dlp -o "~/Videos/%(title)s.%(ext)s"'
 alias ytdlm='yt-dlp -x --audio-format opus --audio-quality 32K -o "/home/m/Music/%(title)s.%(ext)s"'
+=======
+alias ytdl='yt-dlp -o "%(title)s.%(ext)s"'
+alias ytdlm='yt-dlp -x --audio-format opus --audio-quality 32K -o "%(title)s.%(ext)s"'
+>>>>>>> refs/remotes/origin/master
 alias vifm='$HOME/.config/vifm/scripts/vifmrun'
+alias gitmulti='git config user.name "Multiiiiii" && git config user.email "149270406+Multiiiiii@users.noreply.github.com"'
 alias gitconf='git config user.name && git config user.email'
+alias wttr='curl https://wttr.in'
+alias polkit='/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &'
+alias quote='$HOME/.scripts/quote.sh'
+alias cowsay='cowsay -W $(tput cols)'
+alias figlet='figlet -w $(tput cols)'
 source /usr/share/autojump/autojump.bash
 
+export MANPAGER='nvim +Man!'
 export PATH="$PATH:$HOME/.scripts"
 export HISTCONTROL=ignoreboth
 HISTSIZE=10000
