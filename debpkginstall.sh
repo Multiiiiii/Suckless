@@ -44,6 +44,7 @@ zip
 xwallpaper
 build-essential 
 libx11-dev 
+libharfbuzz-dev
 libxft-dev 
 libxinerama-dev 
 libxrandr-dev 
