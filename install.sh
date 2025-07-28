@@ -1,17 +1,30 @@
 
 #!/bin/bash
 
-read -p "Is this a minimal intsall (no wm)? [Y/n]" yn
-: ${yn:=y}
-if [[ $yn == [Yy]* ]]; then
+echo "Choose your distribution:"
+echo "1) Debian"
+echo "2) Arch"
+echo "3) other"
 
-  echo "Skipping..."
+read -p "Enter your choice: " choice
 
-else
- sudo mv dwm.desktop /usr/share/xsessions/
- sudo mv dwm.sh /usr/local/bin/
-fi
+case $choice in
+    1)
+        echo "You chose Debian."
+        ./debpkginstall.sh
+        ;;
+    2)
+        echo "You use Arch btw."
+        paru
+        chaos
+        pkg_arch
+        ;;
+    *)
+        echo "Figure it out I guess"
+        ;;
+esac
 
+paru() {
 read -p "Do you have Paru? [y/N]" yn
 : ${yn:=n}
 if [[ $yn == [Yy]* ]]; then
@@ -29,7 +42,9 @@ else
 "
 ./getparu.sh
 fi
+}
 
+chaos(){
 read -p "Do you have ChaoticAUR? [y/N]" yn
 : ${yn:=n}
 if [[ $yn == [Yy]* ]]; then
@@ -52,7 +67,9 @@ else
 "
 sudo ./ChaoticAUR.sh
 fi
+}
 
+pkg_arch(){
 read -p "Do you have the nessesary packages? [y/N]" yn
 : ${yn:=n}
 if [[ $yn == [Yy]* ]]; then
@@ -76,6 +93,7 @@ else
 "
 ./pkginstall.sh
 fi
+}
 
 echo "
                   _          _ _

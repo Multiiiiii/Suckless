@@ -1,2 +1,2 @@
 
-echo "$(brightnessctl get | awk '{print int(100*($1/255))}')"
+echo "$(brightnessctl get | awk '{print int(100*($1/64764))}')"
