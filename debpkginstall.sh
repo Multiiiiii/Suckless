@@ -16,6 +16,7 @@ while IFS= read -r package; do
 done < <(cat <<EOF
 curl
 git
+qutebrowser
 nvim
 htop
 nvtop
