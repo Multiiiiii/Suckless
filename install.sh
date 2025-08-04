@@ -12,7 +12,7 @@ case $choice in
     1)
         echo "You chose Debian."
         ./debpkginstall.sh
-        cp res.h /usr/include/xcb/
+        sudo cp res.h /usr/include/xcb/
         ;;
     2)
         echo "You use Arch btw."

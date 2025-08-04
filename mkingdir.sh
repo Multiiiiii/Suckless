@@ -7,3 +7,7 @@ mkdir .scripts
 cd Pictures
 mkdir Wall
 cd ..
+cd .config
+mkdir vifm
+cd vifm 
+mkdir scripts
