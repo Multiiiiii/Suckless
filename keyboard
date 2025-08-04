@@ -1,0 +1,3 @@
+XKBMODEL="pc105"
+XKBLAYOUT="custom"
+BACKSPACE="guess"
