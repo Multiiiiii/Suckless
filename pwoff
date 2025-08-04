@@ -1,1 +1,1 @@
-shutdown now
+systemctl shutdown now
