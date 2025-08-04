@@ -13,6 +13,7 @@ case $choice in
         echo "You chose Debian."
         ./debpkginstall.sh
         sudo cp res.h /usr/include/xcb/
+        neoboarddeb
         ;;
     2)
         echo "You use Arch btw."
@@ -182,7 +183,24 @@ else
     echo "Skipping the command..."
 fi
 }
+neoboarddeb(){
+read -p "Do you want to use my custom version of the Neo2 Keyboardlayout? [Y/n]" yn
 
+: ${yn:=y}
+if [[ $yn == [Yy]* ]]; then
+    echo "
+ _   _              ____
+| \\ | | ___  ___   |___ \\
+|  \\| |/ _ \\/ _ \\    __) |
+| |\\  |  __/ (_) |  / __/
+|_| \\_|\\___|\\___/  |_____|
+
+"
+./neoboard_deb.sh
+else
+    echo "Skipping the command..."
+fi
+}
 
 movescripts(){
 echo "
