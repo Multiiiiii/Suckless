@@ -1,38 +1,6 @@
 
 #!/bin/bash
 
-echo "Choose your distribution:"
-echo "1) Debian"
-echo "2) Arch"
-echo "3) other"
-
-read -p "Enter your choice: " choice
-
-case $choice in
-    1)
-        echo "You chose Debian."
-        ./debpkginstall.sh
-        sudo cp res.h /usr/include/xcb/
-        neoboarddeb
-        ;;
-    2)
-        echo "You use Arch btw."
-        paru
-        chaos
-        pkg_arch
-        firewall
-        dir
-        makesuckless
-        movefiles
-        neoboard
-        movescripts
-        fast
-        nvchad
-        ;;
-    *)
-        echo "Figure it out I guess"
-        ;;
-esac
 
 paru() {
 read -p "Do you have Paru? [y/N]" yn
@@ -235,3 +203,36 @@ echo "
 "
 ./nvchad.sh
 }
+
+echo "Choose your distribution:"
+echo "1) Debian"
+echo "2) Arch"
+echo "3) other"
+
+read -p "Enter your choice: " choice
+
+case $choice in
+    1)
+        echo "You chose Debian."
+        ./debpkginstall.sh
+        sudo cp res.h /usr/include/xcb/
+        neoboarddeb
+        ;;
+    2)
+        echo "You use Arch btw."
+        paru
+        chaos
+        pkg_arch
+        firewall
+        dir
+        makesuckless
+        movefiles
+        neoboard
+        movescripts
+        fast
+        nvchad
+        ;;
+    *)
+        echo "Figure it out I guess"
+        ;;
+esac
