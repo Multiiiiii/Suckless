@@ -88,7 +88,7 @@ static const struct arg args[] = {
 //  { temp,     ",%s° ",		 "/sys/class/thermal/thermal_zone0" },
 	{ run_command, "[ %s] ",	     "./suckless/Scripts/Volume.sh"},
   { run_command, "[%s] ",         "./suckless/Scripts/Mic.sh"},
-	{ run_command, "[ %s%%] ",   "xbacklight -get | awk '{print int($1)}'" },
-//	{ run_command, "[  %s%%] ",   "echo "$(brighnessctl get | awk '{print int(100*($1/255))}')"" },
+//	{ run_command, "[ %s%%] ",   "xbacklight -get | awk '{print int($1)}'" },
+	{ run_command, "[  %s%%] ",   "echo "$(brighnessctl get | awk '{print int(100*($1/255))}')"" },
 	{ datetime, "[ %s",           "%F][ %T] "  },
 };
