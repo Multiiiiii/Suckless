@@ -2,6 +2,7 @@
 cp .xinitrc ~/ 
 cp .bashrc ~/ 
 cp vifmrc ~/.config/vifm/vifmrc
+cp vifmrun ~/.config/vifm/vifmrun
 cp palenight.vifm ~/.config/vifm/colors/
 cp 00-touchpad.conf /etc/X11/xorg.conf.d/
 
