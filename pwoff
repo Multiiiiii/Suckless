@@ -1,1 +1,1 @@
-systemctl shutdown now
+systemctl poweroff
