@@ -12,12 +12,21 @@ case $choice in
     1)
         echo "You chose Debian."
         ./debpkginstall.sh
+        cp res.h /usr/include/xcb/
         ;;
     2)
         echo "You use Arch btw."
         paru
         chaos
         pkg_arch
+        firewall
+        dir
+        makesuckless
+        movefiles
+        neoboard
+        movescripts
+        fast
+        nvchad
         ;;
     *)
         echo "Figure it out I guess"
@@ -95,6 +104,7 @@ else
 fi
 }
 
+firewall(){
 echo "
                   _          _ _
   ___ _ __   __ _| |__   ___| (_)_ __   __ _
@@ -110,6 +120,8 @@ echo "
 
 "
 ./firewall.sh
+}
+dir(){
 echo "
       _                    _   _
   ___| |__  _ __ ___  __ _| |_(_)_ __   __ _
@@ -126,6 +138,8 @@ echo "
 
 "
 ./mkingdir.sh
+}
+makesuckless(){
 echo "
                  _    _               ____             _    _
  _ __ ___   __ _| | _(_)_ __   __ _  / ___| _   _  ___| | _| | ___  ___ ___
@@ -136,6 +150,8 @@ echo "
 
 "
 ./makesuckless.sh
+}
+movefiles(){
 echo "
                       _                   _       _    __ _ _
  _ __ ___   _____   _(_)_ __   __ _    __| | ___ | |_ / _(_) | ___  ___
@@ -146,8 +162,9 @@ echo "
 
 "
 ./dotfiles.sh
+}
 
-
+neoboardarch(){
 read -p "Do you want to use my custom version of the Neo2 Keyboardlayout? [Y/n]" yn
 
 : ${yn:=y}
@@ -164,9 +181,10 @@ if [[ $yn == [Yy]* ]]; then
 else
     echo "Skipping the command..."
 fi
+}
 
 
-
+movescripts(){
 echo "
  ____  _
 |  _ \\(_) ___ ___
@@ -177,6 +195,8 @@ echo "
 
 "
 ./movescripts.sh
+}
+fast(){
 echo "
   __           _    __      _       _
  / _| __ _ ___| |_ / _| ___| |_ ___| |__
@@ -185,6 +205,8 @@ echo "
 |_|  \\__,_|___/\\__|_|  \\___|\\__\\___|_| |_|
 "
 ./fast.sh
+}
+nvchad(){
 echo "
  _   _        ____ _               _
 | \\ | |_   __/ ___| |__   __ _  __| |
@@ -194,5 +216,4 @@ echo "
 
 "
 ./nvchad.sh
-
-
+}
