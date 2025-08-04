@@ -25,7 +25,7 @@ nvtop
 vifm
 cmake
 cmatrix
-fastfetch
+fonts-font-awesome
 nvtop 
 mpv
 mupdf
@@ -42,6 +42,7 @@ xdotool
 ufw
 python3 
 python3-pip
+pipx
 zip
 xwallpaper
 build-essential 
@@ -59,5 +60,6 @@ EOF
 )
 
 sudo npm install -g udiskie-dmenu
-sudo pip3 install pywal
+pipx install pywal
+sudo cp ~/.local/bin/wal /usr/bin/
 
