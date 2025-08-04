@@ -15,6 +15,7 @@ while IFS= read -r package; do
     fi
 done < <(cat <<EOF
 autojump
+cat
 curl
 git
 qutebrowser
@@ -52,6 +53,7 @@ libxrandr-dev
 libxkbcommon-dev 
 libx11-xcb-dev 
 libxcb-util-dev 
+libxcb-res0-dev
 libxcb-keysyms-dev
 EOF
 )
