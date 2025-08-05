@@ -20,6 +20,7 @@ curl
 git
 qutebrowser
 nvim
+ncdu
 htop
 nvtop
 vifm
@@ -58,7 +59,7 @@ libxcb-res0-dev
 libxcb-keysyms-dev
 EOF
 )
-
+wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh -O - -q | sudo bash -s system
 sudo npm install -g udiskie-dmenu
 pipx install pywal
 sudo cp ~/.local/bin/wal /usr/bin/
