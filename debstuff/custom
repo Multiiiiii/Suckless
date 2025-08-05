@@ -1,0 +1,8 @@
+default
+xkb_symbols "neo_better" {
+include "de(neo)"
+
+name[group1]="German (Neo, no useless)";
+
+    key <TLDE> { [ grave,                   asciicircum,             U21BB,                   NoSymbol,                U22C1,           Pointer_EnableKeys,              emptyset,                NoSymbol                 ] };
+};
