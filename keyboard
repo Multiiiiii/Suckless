@@ -1,4 +1,3 @@
 XKBMODEL="pc105"
-XKBLAYOUT="de"
-XKBVARIANT="neo"
+XKBLAYOUT="neo"
 BACKSPACE="guess"
