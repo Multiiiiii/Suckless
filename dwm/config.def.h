@@ -153,6 +153,7 @@ static const Key keys[] = {
   { 0,                       0x1008FF11,      spawn,         {.v = voldowncmd } },
   { 0,                       0x1008FF12,      spawn,         {.v = mutevolcmd } },
   { 0,                       0x1008FFB2,      spawn,         {.v = mutemiccmd } },
+  { MODKEY|ShiftMask,        XK_m,            spawn,         {.v = mutemiccmd } },
   { 0,                       0x1008FF02,      spawn,         {.v = brightupcmd } },
   { 0,                       0x1008FF03,      spawn,         {.v = brightdowncmd } },
   { 0,                       0x1008FF17,      spawn,         {.v = nextcmd } },
