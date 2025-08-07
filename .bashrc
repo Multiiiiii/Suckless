@@ -19,7 +19,9 @@ alias vim='nvim'
 alias svim='sudo nvim'
 alias noorphans='sudo pacman -R $(pacman -Qtdq)'
 alias ytdl='yt-dlp -o "%(title)s.%(ext)s"'
-alias ytdlm='yt-dlp -x --audio-format opus --audio-quality 32K -o "%(title)s.%(ext)s"'
+alias ytdlm='yt-dlp -x --audio-format opus \
+  --embed-metadata --add-metadata --embed-thumbnail \
+  -o "%(title)s.%(ext)s"'
 alias vifm='$HOME/.config/vifm/scripts/vifmrun'
 alias gitmulti='git config user.name "Multiiiiii" && git config user.email "149270406+Multiiiiii@users.noreply.github.com"'
 alias gitconf='git config user.name && git config user.email'
