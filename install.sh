@@ -216,6 +216,11 @@ case $choice in
         echo "You chose Debian."
         ./debpkginstall.sh
         sudo cp res.h /usr/include/xcb/
+        makesuckless
+        dir
+        movefiles
+        movescripts 
+        fast
         neoboarddeb
         ;;
     2)

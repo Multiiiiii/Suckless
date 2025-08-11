@@ -36,6 +36,7 @@ yt-dlp
 neovim
 udiskie
 unzip
+i3lock
 warp
 nodejs 
 npm
@@ -61,13 +62,13 @@ libx11-xcb-dev
 libxcb-util-dev 
 libxcb-res0-dev
 libxcb-keysyms-dev
-libxcb-keysyms1-dev
-libxcb-icccm4-dev
-libxcb-image0-dev
-libxcb-randr0-dev
-libxcb-xinerama0-dev
 EOF
 )
+
+export PATH=$PATH:/usr/sbin
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install fastfetch
 wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh -O - -q | sudo bash -s system
 sudo npm install -g udiskie-dmenu
 pipx install pywal
