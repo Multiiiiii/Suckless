@@ -89,7 +89,7 @@ brew install fastfetch
 cd ~
 git clone https://github.com/Raymo111/i3lock-color.git
 cd i3lock-color
-./build.sh 
+./install-i3lock-color.sh
 cd suckless
 wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh -O - -q | sudo bash -s system
 sudo npm install -g udiskie-dmenu
