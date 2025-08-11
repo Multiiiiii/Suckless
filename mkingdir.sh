@@ -11,3 +11,4 @@ cd .config
 mkdir vifm
 cd vifm 
 mkdir scripts
+mkdir colors

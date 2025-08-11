@@ -47,6 +47,9 @@ python3-pip
 pipx
 zip
 xwallpaper
+xorg
+xorg-dev
+xserver-xorg-video-all
 build-essential 
 libx11-dev 
 libharfbuzz-dev
@@ -58,6 +61,11 @@ libx11-xcb-dev
 libxcb-util-dev 
 libxcb-res0-dev
 libxcb-keysyms-dev
+libxcb-keysyms1-dev
+libxcb-icccm4-dev
+libxcb-image0-dev
+libxcb-randr0-dev
+libxcb-xinerama0-dev
 EOF
 )
 wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh -O - -q | sudo bash -s system
