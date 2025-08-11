@@ -36,7 +36,6 @@ yt-dlp
 neovim
 udiskie
 unzip
-i3lock
 warp
 nodejs 
 npm
@@ -62,6 +61,24 @@ libx11-xcb-dev
 libxcb-util-dev 
 libxcb-res0-dev
 libxcb-keysyms-dev
+autoconf
+gcc
+make
+pkg-config
+libpam0g-dev
+libcairo2-dev
+libfontconfig1-dev
+libxcb-composite0-dev
+libev-dev
+libxcb-xkb-dev
+libxcb-xinerama0-dev
+libxcb-randr0-dev
+libxcb-image0-dev
+libxcb-util0-dev
+libxcb-xrm-dev
+libxkbcommon-x11-dev
+libjpeg-dev
+libgif-dev
 EOF
 )
 
@@ -73,4 +90,7 @@ wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/in
 sudo npm install -g udiskie-dmenu
 pipx install pywal
 sudo cp ~/.local/bin/wal /usr/bin/
+git clone https://github.com/Raymo111/i3lock-color.git
+cd i3lock-color
+./build.sh
 
