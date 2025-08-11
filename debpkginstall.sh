@@ -86,11 +86,13 @@ export PATH=$PATH:/usr/sbin
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install fastfetch
+cd ~
+git clone https://github.com/Raymo111/i3lock-color.git
+cd i3lock-color
+./build.sh 
+cd suckless
 wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh -O - -q | sudo bash -s system
 sudo npm install -g udiskie-dmenu
 pipx install pywal
 sudo cp ~/.local/bin/wal /usr/bin/
-git clone https://github.com/Raymo111/i3lock-color.git
-cd i3lock-color
-./build.sh
 
