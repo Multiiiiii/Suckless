@@ -32,6 +32,7 @@ mpv
 mupdf
 syncplay
 syncthing
+sxiv
 yt-dlp
 neovim
 udiskie
