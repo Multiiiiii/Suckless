@@ -213,7 +213,25 @@ read -p "Enter your choice: " choice
 
 case $choice in
     1)
-        echo "You chose Debian."
+        echo "
+        _,met\$\$\$\$gg.
+     ,g\$\$\$\$\$\$\$\$\$\$\$\$P.
+   ,g\$\$P\"\"       \"\"\"Y\$\$.
+  ,\$\$P'              \`\$\$\$.
+',\$\$P       ,ggs.     \`\$\$b:
+\`d\$\$'     ,\$P\"'   .    \$\$\$
+ \$\$P      d\$'     ,    \$\$P
+ \$\$:      \$\$.   -    ,d\$\$'
+ \$\$;      Y\$b._   _,d\$P'
+ Y\$\$.    \`.'\`\"Y\$\$\$\$P\"'
+ \`\$\$b      \"-.__
+  \`Y\$\$b
+   \`Y\$\$.
+     \`\$\$b.
+       \`Y\$\$b.
+         \`\"Y\$b._
+             \`\"\"\"\"
+"
         ./debpkginstall.sh
         sudo cp res.h /usr/include/xcb/
         makesuckless
@@ -224,7 +242,27 @@ case $choice in
         neoboarddeb
         ;;
     2)
-        echo "You use Arch btw."
+        echo "
+                 -\`
+                .o+\`
+               \`ooo/
+              \`+oooo:
+             \`+oooooo:
+             -+oooooo+:
+           \`/:-:++oooo+:
+          \`/++++/+++++++:
+         \`/++++++++++++++:
+        \`/+++ooooooooooooo/\`
+       ./ooosssso++osssssso+\`
+      .oossssso-\`\`\`\`/ossssss+\`
+     -osssssso.      :ssssssso.
+    :osssssss/        osssso+++.
+   /ossssssss/        +ssssooo/-
+ \`/ossssso+/:-        -:/+osssso+-
+\`+sso+:-\`                 \`.-/+oso:
+\`++:.                           \`-/+/
+.\`                                 \`/
+"
         paru
         chaos
         pkg_arch
@@ -238,6 +276,13 @@ case $choice in
         nvchad
         ;;
     *)
-        echo "Figure it out I guess"
+        echo "
+  __ _                        _ _                 _     ___                             
+ / _(_) __ _ _   _ _ __ ___  (_) |_    ___  _   _| |_  |_ _|   __ _ _   _  ___  ___ ___ 
+| |_| |/ _\` | | | | '__/ _ \ | | __|  / _ \| | | | __|  | |   / _\` | | | |/ _ \/ __/ __|
+|  _| | (_| | |_| | | |  __/ | | |_  | (_) | |_| | |_   | |  | (_| | |_| |  __/\__ \__ \\
+|_| |_|\__, |\__,_|_|  \___| |_|\__|  \___/ \__,_|\__| |___|  \__, |\__,_|\___||___/___/
+       |___/                                                  |___/                     
+"
         ;;
 esac
