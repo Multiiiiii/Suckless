@@ -15,6 +15,7 @@ while IFS= read -r package; do
     fi
 done < <(cat <<EOF
 autojump
+brightnessctl
 cat
 curl
 git
