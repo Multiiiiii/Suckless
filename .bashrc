@@ -43,5 +43,5 @@ if [ "$(tty)" = "/dev/tty1" ]; then
 fi
 
 PS1='[\u@\h][\w]\$ '
-fastfetch --load-config default.jsonc
+fastfetch --config default.jsonc
 
