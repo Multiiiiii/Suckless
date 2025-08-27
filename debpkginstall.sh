@@ -100,4 +100,8 @@ wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/in
 sudo npm install -g udiskie-dmenu
 pipx install pywal
 sudo cp ~/.local/bin/wal /usr/bin/
+git clone https://github.com/cdown/clipmenu.git
+cd clipmenu
+make
+sudo make install
 
