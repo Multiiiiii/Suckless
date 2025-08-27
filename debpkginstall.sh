@@ -67,6 +67,8 @@ autoconf
 gcc
 make
 pkg-config
+pipewire
+pipewire-audio-client-libraries
 libpam0g-dev
 libcairo2-dev
 libfontconfig1-dev
