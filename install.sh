@@ -240,6 +240,7 @@ case $choice in
         movescripts 
         fast
         neoboarddeb
+        export PATH=$PATH:/usr/bin:/usr/sbin/:/usr/local/lib/node_modules/
         ;;
     2)
         echo "
