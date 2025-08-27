@@ -69,6 +69,7 @@ make
 pkg-config
 pipewire
 pipewire-audio-client-libraries
+pulseaudio
 libpam0g-dev
 libcairo2-dev
 libfontconfig1-dev
