@@ -141,6 +141,8 @@ static const char *selectwindowcmd[] = { "screenshot.sh", "select", NULL };
 static const char *selectareacmd[] = { "screenshot.sh", "area", NULL };
 static const char *activewindowcmd[] = { "screenshot.sh", "window", NULL };
 static const char *fullscreencmd[] = {"screenshot.sh", "full", NULL };
+static const char *redshiftoff[] = {"redshift", "-x", NULL};
+static const char *redshifton[] = {"redshift", "-O", "3000", NULL};
 
 
 
@@ -164,6 +166,9 @@ static const Key keys[] = {
   { 0,                       0x1008FF1d,      spawn,         {.v = calccmd } },
 
   { 0,                       0x1008ff59,      spawn,         {.v = screencmd } },
+
+  { ShiftMask,                    XK_F11,    spawn,          {.v = redshiftoff} },
+  { 0,                            XK_F11,    spawn,          {.v = redshifton} },
 
   /*Screenshots*/
   { 0,                             XK_Print,  spawn,         {.v = activewindowcmd } },
