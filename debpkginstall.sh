@@ -97,7 +97,8 @@ cd i3lock-color
 ./install-i3lock-color.sh
 cd suckless
 wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh -O - -q | sudo bash -s system
-cp debstuff/udiskie-dmenu /usr/bin/
+chmod +x debstuff/udiskie-dmenu
+sudo cp debstuff/udiskie-dmenu /usr/bin/
 pipx install pywal
 sudo cp ~/.local/bin/wal /usr/bin/
 git clone https://github.com/cdown/clipmenu.git
