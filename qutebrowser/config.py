@@ -5,3 +5,4 @@ c.completion.shrink = False
 config.load_autoconfig(False)
 config.source('qutewal.py')
 c.auto_save.session = True
+config.set("colors.webpage.darkmode.enabled", True)
