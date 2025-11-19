@@ -28,6 +28,7 @@ nvtop
 vifm
 cmake
 cmatrix
+fastfetch
 fonts-font-awesome
 nvtop 
 mpv
@@ -91,7 +92,6 @@ EOF
 export PATH=$PATH:/usr/sbin
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install fastfetch
 cd ~
 git clone https://github.com/Raymo111/i3lock-color.git
 cd i3lock-color
